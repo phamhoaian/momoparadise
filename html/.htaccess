@@ -1,0 +1,3 @@
+Options Indexes FollowSymLinks Includes ExecCGI 
+AddType text/html .shtml
+AddHandler server-parsed .html

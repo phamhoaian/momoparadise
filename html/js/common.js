@@ -21,4 +21,12 @@ $(function(){
 			sub_menu.slideToggle('slow');
 		}
 	});
+
+	var allPanels = $('.career > dd').hide();
+	$('.career > dt').click(function(){
+		allPanels.slideUp();
+
+	    $(this).next().slideDown();
+	    return false;
+	});
 });

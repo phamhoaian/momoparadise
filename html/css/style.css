@@ -742,3 +742,40 @@ dl.career .btn-apply {
     width: 50%;
     display: inline-block;
 }
+.mo-company-brands {
+    font-size: 0;
+    margin-left: 15rem;
+}
+.mo-company-brands .mo-brand-logo, .mo-company-brands .mo-branch-info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem;
+    text-align: center;
+}
+.mo-company-brands .mo-brand-logo {
+    width: 40%;
+}
+.mo-company-brands .mo-branch-info {
+    width: 60%;
+}
+.mo-company-brands .mo-branch-info p {
+    margin: 0;
+}
+.mo-galleries {
+    font-size: 0;
+    background: #000000;
+    overflow: hidden;
+}
+.mo-gallery-item {
+    padding: 10px;
+    display: inline-block;
+}
+.mo-galleries .row2 .mo-gallery-item:first-child {
+    width: 69%;
+} 
+.mo-galleries .row2 .mo-gallery-item:first-child + .mo-gallery-item {
+    width: 31%;
+} 
+.mo-galleries .row3 .mo-gallery-item {
+    width: 50%;
+}

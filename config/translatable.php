@@ -10,7 +10,7 @@ return [
     | Contains an array with the applications available locales.
     |
     */
-    'locales' => ['en', 'fr', 'nl'],
+    'locales' => ['en', 'vi'],
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | you can specify what default should be used here.
     |
     */
-    'locale' => null,
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------

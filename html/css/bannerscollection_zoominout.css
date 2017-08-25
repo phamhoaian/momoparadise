@@ -208,34 +208,35 @@ skins available:
 
 /***majestic SKIN***/
 .bannerscollection_zoominout.majestic .bannerControls {
-	position:absolute;
-	left:0;
-	top:0;
+	position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: inline-block;
 	z-index:20;
-	width:100%;
+	font-size: 0;
+}
+
+.bannerscollection_zoominout.majestic .leftNav, .bannerscollection_zoominout.majestic .rightNav {
+	width: 3.75rem;
+    height: 3.75rem;
+    border: 1px solid #fff;
+    background: none;
+    padding: 0;
+    display: inline-block !important;
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    cursor: pointer;
+    -webkit-transition: background-color .3s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1) 75ms;
+    transition: background-color .3s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1) 75ms;
 }
 
 .bannerscollection_zoominout.majestic .leftNav {
-	position:absolute;
-	left:0px;
-	width:70px;
-	height:70px;
-	background:url(skins/majestic/leftNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
+	background: url('/images/arrow-prev.png') no-repeat center center;
 }
-.bannerscollection_zoominout.majestic .leftNav:hover {
-	background:url(skins/majestic/leftNavON.png) 0 0 no-repeat;
-}
+
 .bannerscollection_zoominout.majestic .rightNav {
-	position:absolute;
-	right:0px;
-	width:70px;
-	height:70px;
-	background:url(skins/majestic/rightNavOFF.png) 0 0 no-repeat;
-	cursor: pointer;
-}
-.bannerscollection_zoominout.majestic .rightNav:hover {
-	background:url(skins/majestic/rightNavON.png) 0 0 no-repeat;
+	background: url('/images/arrow-next.png') no-repeat center center;
 }
 
 .bannerscollection_zoominout.majestic .playOver {

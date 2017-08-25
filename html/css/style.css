@@ -744,7 +744,6 @@ dl.career .btn-apply {
 }
 .mo-company-brands {
     font-size: 0;
-    margin-left: 15rem;
 }
 .mo-company-brands .mo-brand-logo, .mo-company-brands .mo-branch-info {
     display: inline-block;
@@ -752,14 +751,21 @@ dl.career .btn-apply {
     padding: 1rem;
     text-align: center;
 }
-.mo-company-brands .mo-brand-logo {
-    width: 40%;
-}
-.mo-company-brands .mo-branch-info {
-    width: 60%;
-}
 .mo-company-brands .mo-branch-info p {
     margin: 0;
+}
+@media only screen and (min-width: 999px) {
+    .mo-company-brands {
+        margin-left: 15rem;
+    }
+}
+@media only screen and (min-width: 568px) {
+    .mo-company-brands .mo-brand-logo {
+        width: 40%;
+    }
+    .mo-company-brands .mo-branch-info {
+        width: 60%;
+    }
 }
 .mo-galleries {
     font-size: 0;
@@ -770,12 +776,23 @@ dl.career .btn-apply {
     padding: 10px;
     display: inline-block;
 }
-.mo-galleries .row2 .mo-gallery-item:first-child {
-    width: 69%;
-} 
-.mo-galleries .row2 .mo-gallery-item:first-child + .mo-gallery-item {
-    width: 31%;
-} 
-.mo-galleries .row3 .mo-gallery-item {
-    width: 50%;
+@media only screen and (min-width: 999px) {
+    .mo-galleries .row2 .mo-gallery-item:first-child {
+        width: 69%;
+    } 
+    .mo-galleries .row2 .mo-gallery-item:first-child + .mo-gallery-item {
+        width: 31%;
+    } 
+    .mo-galleries .row3 .mo-gallery-item:first-child {
+        width: 51.2%;
+    } 
+    .mo-galleries .row3 .mo-gallery-item:first-child + .mo-gallery-item {
+        width: 48.8%;
+    } 
+}
+.mo-slide-logo {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 10;
 }

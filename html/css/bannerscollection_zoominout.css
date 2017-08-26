@@ -216,6 +216,18 @@ skins available:
 	font-size: 0;
 }
 
+@media only screen and (max-width: 599px) {
+	.bannerscollection_zoominout.majestic .bannerControls {
+		display: none;
+	}
+	.mo-slide-logo {
+		position: relative;
+		right: 0 !important;
+		width: 100%;
+		padding: 10px;
+	}
+}
+
 .bannerscollection_zoominout.majestic .leftNav, .bannerscollection_zoominout.majestic .rightNav {
 	width: 3.75rem;
     height: 3.75rem;

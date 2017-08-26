@@ -160,9 +160,7 @@
 								<p>Phone: (028) 38 272 909</p>
 								<p>Fax: (028) 38 272 169</p>
 							</div>
-							<div class="map">
-								
-							</div>
+							<div id="map_hcm" class="map"></div>
 							<div class="contact-form">
 								<form action="/company/contact-us.html" method="post">
 									<input type="text" value="" name="name" placeholder="Name...">
@@ -180,9 +178,7 @@
 								<p>Phone: (028) 38 272 909</p>
 								<p>Fax: (028) 38 272 169</p>
 							</div>
-							<div class="map">
-								
-							</div>
+							<div id="map_hn" class="map"></div>
 							<div class="contact-form">
 								<form action="/company/contact-us.html" method="post">
 									<input type="text" value="" name="name" placeholder="Name...">
@@ -243,25 +239,34 @@
 		</div>
 	</footer>
 	<!-- END FOOTER -->
-	<div id="map"></div>
 
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/common.js"></script>
 	<script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+        var pos_hcm = {lat: 10.7803611, lng: 106.6954407};
+        var map_hcm = new google.maps.Map(document.getElementById('map_hcm'), {
+          zoom: 19,
+          center: pos_hcm
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+        var marker_hn = new google.maps.Marker({
+          position: pos_hcm,
+          map: map_hcm
+        });
+
+        var pos_hn = {lat: 10.7803611, lng: 106.6954407};
+        var map_hn = new google.maps.Map(document.getElementById('map_hn'), {
+          zoom: 19,
+          center: pos_hn
+        });
+        var marker_hn = new google.maps.Marker({
+          position: pos_hn,
+          map: map_hn
         });
       }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjpAJ-nMrD7Db5kEZ3WgKT5RsFhPOF86s&callback=initMap">
     </script>
 	<!-- END JS -->
 </body>

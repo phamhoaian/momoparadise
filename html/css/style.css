@@ -658,8 +658,10 @@ body.main-nav-open {
 .content-nav ul.sub li.active a {
     color: #000;
 }
-.contact {
-    padding: 7rem 0;
+@media only screen and (min-width: 1000) {
+    .contact {
+        padding: 7rem 0;
+    }
 }
 .contact .container {
     padding: 0 7.5rem;
@@ -795,4 +797,21 @@ dl.career .btn-apply {
     right: 5%;
     bottom: 5%;
     z-index: 10;
+}
+.map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table#our-culture {
+    border-spacing: 10px;
+}
+table#our-culture td {
+    vertical-align: top;
+}
+table#our-culture h3 {
+    margin: 0;
+}
+table#our-culture p {
+    margin: 0;
 }

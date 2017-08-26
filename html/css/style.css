@@ -309,6 +309,11 @@ ul {
         white-space: nowrap;
     }
 }
+.mo-nav-sub {
+    visibility: hidden;
+    -webkit-transition: visibility 0s .6s;
+    transition: visibility 0s .6s;
+}
 .mo-nav-item:hover .mo-nav-sub {
     visibility: visible;
     -webkit-transform: translateX(0);

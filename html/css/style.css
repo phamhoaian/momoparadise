@@ -169,17 +169,22 @@ a {
     transition-delay: 0s,.15s;
 }
 .mo-logo-wrap {
-    display: inline-block;
+    display: table;
     vertical-align: middle;
     padding: 0.5rem;
     height: 100%;
 }
-.mo-logo-wrap img {
-	height: 100%;
+.mo-logo-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1rem;
 }
 @media only screen and (max-width: 699px) {
     .mo-logo-wrap img {
-        width: 80px;
+        width: 50px;
+    }
+    .mo-logo-wrapper {
+        padding: 10px;
     }
 }
 @media only screen and (min-width: 700px) {
@@ -303,6 +308,11 @@ ul {
         margin-left: -21.875rem;
         white-space: nowrap;
     }
+}
+.mo-nav-sub {
+    visibility: hidden;
+    -webkit-transition: visibility 0s .6s;
+    transition: visibility 0s .6s;
 }
 .mo-nav-item:hover .mo-nav-sub {
     visibility: visible;
@@ -563,7 +573,8 @@ body.main-nav-open {
 }
 @media only screen and (max-width: 999px) {
     .mo-wraper.half .main-content {
-        padding: 20px;
+        padding: 7.5rem 2rem;
+        margin: 0;
     }
 }
 .mo-footer {
@@ -572,6 +583,7 @@ body.main-nav-open {
 }
 .mo-footer-container {
     margin: 0 auto;
+    padding: 10px;
     display: table;
     width: 100%;
 }
@@ -607,7 +619,24 @@ body.main-nav-open {
     top: 0;
     left: 0;
     width: 27.5rem;
+    z-index: 5;
     background: rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 999px) {
+    .content-nav {
+        display: none;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .mo-nav-footer ul li {
+        margin: 5px 0;
+    }
+    .mo-social-footer ul li {
+        margin: 5px 0;
+    }
+    .mo-wraper.half .main-content {
+        padding: 100px 10px 50px 10px;
+    }
 }
 .content-nav.fixed {
     position: fixed;
@@ -634,8 +663,10 @@ body.main-nav-open {
 .content-nav ul.sub li.active a {
     color: #000;
 }
-.contact {
-    padding: 7rem 0;
+@media only screen and (min-width: 1000) {
+    .contact {
+        padding: 7rem 0;
+    }
 }
 .contact .container {
     padding: 0 7.5rem;
@@ -669,6 +700,7 @@ body.main-nav-open {
     padding: 0;
     float: right;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 dl.career > dt {
     margin-bottom: 10px;
@@ -689,4 +721,102 @@ dl.career .btn-apply {
     font-weight: bold;
     padding: 8px;
     text-transform: uppercase;
+}
+.content-header-bg {
+    position: relative;
+}
+.content-text-bg p {
+    text-align: center;
+    line-height: 1.7;
+}
+@media only screen and (min-width: 700px) {
+    .content-text-bg {
+        position: absolute;
+        bottom: 5rem;
+        width: 100%;
+        padding: 0 10rem;
+    }
+    .content-text-bg p {
+        color: #FFF;
+        font-size: 1.2rem;
+    }
+}
+.contact-block {
+    text-align: right;
+    padding: 2.5rem 0;
+}
+.contact-block .contact-form {
+    width: 50%;
+    display: inline-block;
+}
+.mo-company-brands {
+    font-size: 0;
+}
+.mo-company-brands .mo-brand-logo, .mo-company-brands .mo-branch-info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem;
+    text-align: center;
+}
+.mo-company-brands .mo-branch-info p {
+    margin: 0;
+}
+@media only screen and (min-width: 999px) {
+    .mo-company-brands {
+        margin-left: 15rem;
+    }
+}
+@media only screen and (min-width: 568px) {
+    .mo-company-brands .mo-brand-logo {
+        width: 40%;
+    }
+    .mo-company-brands .mo-branch-info {
+        width: 60%;
+    }
+}
+.mo-galleries {
+    font-size: 0;
+    background: #000000;
+    overflow: hidden;
+}
+.mo-gallery-item {
+    padding: 10px;
+    display: inline-block;
+}
+@media only screen and (min-width: 999px) {
+    .mo-galleries .row2 .mo-gallery-item:first-child {
+        width: 69%;
+    } 
+    .mo-galleries .row2 .mo-gallery-item:first-child + .mo-gallery-item {
+        width: 31%;
+    } 
+    .mo-galleries .row3 .mo-gallery-item:first-child {
+        width: 51.2%;
+    } 
+    .mo-galleries .row3 .mo-gallery-item:first-child + .mo-gallery-item {
+        width: 48.8%;
+    } 
+}
+.mo-slide-logo {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 10;
+}
+.map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table#our-culture {
+    border-spacing: 10px;
+}
+table#our-culture td {
+    vertical-align: top;
+}
+table#our-culture h3 {
+    margin: 0;
+}
+table#our-culture p {
+    margin: 0;
 }

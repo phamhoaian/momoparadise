@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTM-Avo.eot');
+    src: local('UTM-Avo'), url('../fonts/UTM-Avo.woff') format('woff'), url('../fonts/UTM-Avo.ttf') format('truetype');
+}
 body {
-	font-family: Arial;
+	font-family: UTM Avo;
 }
 button {
     border: none;
@@ -12,7 +17,7 @@ img {
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #0004ab;
 }
 * {
     box-sizing: border-box;
@@ -48,11 +53,11 @@ a {
 }
 @media only screen and (min-width: 700px) {
 	.mo-header {
-	    height: 7.5rem;
+	    height: 6rem;
 	}
 	.mo-header-button, .mo-nav-button {
-		width: 7.5rem;
-		height: 7.5rem;
+		width: 6rem;
+		height: 6rem;
 	}
 }
 .mo-nav-button, .mo-logo {
@@ -177,7 +182,7 @@ a {
 .mo-logo-wrapper {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 1rem;
+    padding: 0 5px;
 }
 @media only screen and (max-width: 699px) {
     .mo-logo-wrap img {
@@ -289,13 +294,13 @@ ul {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.mo-nav-parent {
+.mo-nav-parent a{
     color: #FFF;
 }
-.mo-nav-parent:hover {
+.mo-nav-parent:hover a{
 	color: #000;
 }
-.mo-nav-item:hover {
+.mo-nav-item:hover a{
 	color: #fff;
 }
  @media only screen and (min-width: 1000px) {
@@ -604,6 +609,7 @@ body.main-nav-open {
 .mo-nav-footer ul li a {
     text-transform: uppercase;
     font-weight: bold;
+    color: #000;
 }
 .mo-social-footer {
     display: table-cell;
@@ -663,31 +669,37 @@ body.main-nav-open {
 .content-nav ul.sub li.active a {
     color: #000;
 }
-@media only screen and (min-width: 1000) {
-    .contact {
-        padding: 7rem 0;
-    }
+.contact-info {
+    margin-top: 1rem;
 }
 .contact .container {
-    padding: 0 7.5rem;
     overflow: hidden;
 }
 .contact .item {
-    width: 50%;
+    width: 100%;
     float: left;
-    padding: 0 5%;
 }
 .contact .item h3 {
     font-size: 2rem;
     margin: 0;
+    overflow: hidden;
+}
+.contact .right {
+    width: 50%;
+    float: right;
+}
+.contact-form {
+    width: 40%;
+    margin-right: 10%;
+    float: left;
 }
 .contact-form input[type="text"],
 .contact-form textarea {
     width: 100%;
     background: #E8E9EA;
     border: none;
-    margin: 5px 0;
-    padding: 10px 20px;
+    margin: 10px 0;
+    padding: 12px 20px;
 }
 .contact-form textarea {
     resize: none;
@@ -725,6 +737,9 @@ dl.career .btn-apply {
 .content-header-bg {
     position: relative;
 }
+.content-header-bg + .content .main-content {
+    padding-top: 2rem !important;
+}
 .content-text-bg p {
     text-align: center;
     line-height: 1.7;
@@ -744,6 +759,7 @@ dl.career .btn-apply {
 .contact-block {
     text-align: right;
     padding: 2.5rem 0;
+    overflow: hidden;
 }
 .contact-block .contact-form {
     width: 50%;
@@ -804,7 +820,7 @@ dl.career .btn-apply {
     z-index: 10;
 }
 .map {
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin-bottom: 20px;
 }

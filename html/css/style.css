@@ -836,3 +836,17 @@ table#our-culture h3 {
 table#our-culture p {
     margin: 0;
 }
+.news {
+    margin-top: 20px;
+}
+.news .item {
+    border-top: 1px solid #9B9DA0;
+    padding: 10px 0 40px;
+    overflow: hidden;
+}
+.news .img {
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}

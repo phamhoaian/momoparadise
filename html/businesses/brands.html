@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
@@ -150,9 +151,9 @@
 			<section class="content">
 				<div class="main-content">
 					<div class="mo-company-brands">
-						<div class="mo-brand-logo">
+						<a href="javascript:void(0)" class="mo-brand-logo">
 							<img src="/images/logo-momoparadise.png" alt="Mo-Mo-Paradise Việt Nam">
-						</div>
+						</a>
 						<div class="mo-branch-info">
 							<p style="font-size: 20px">
 								<strong>MO - MO PARADISE</strong><br/>
@@ -169,28 +170,28 @@
 			<div class="mo-galleries">
 				<div class="mo-gallery-wrap">
 					<div class="row1">
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-1.jpg">
 						</div>
 					</div>
 					<div class="row2">
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-2.jpg">
 						</div>
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-3.jpg">
 						</div>
 					</div>
 					<div class="row3">
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-4.jpg">
 						</div>
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-5.jpg">
 						</div>
 					</div>
 					<div class="row4">
-						<div class="mo-gallery-item">
+						<div class="mo-gallery-item wow fadeInUp">
 							<img src="/images/galleries/galleries-6.jpg">
 						</div>
 					</div>
@@ -246,7 +247,18 @@
 
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/wow.min.js"></script>
 	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.mo-brand-logo').click(function(){
+				$('.mo-galleries').animate({opacity: 1}, 500);
+			});
+
+		});
+
+		new WOW().init();
+	</script>
 	<!-- END JS -->
 </body>
 </html>

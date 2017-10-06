@@ -204,7 +204,10 @@
 							</tr>
 						</tbody>
 					</table>
-					<dl class="career">
+					<div class="box-apply" style="display: none">
+						<a href="javascript:void(0)" id="btn-apply">Open positions</a>
+					</div>
+					<dl class="career" style="display: none">
 						<dt>- Accountant</dt>
 						<dd style="display: none">
 							<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
@@ -280,6 +283,14 @@
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var apply = getParameterByName('apply');
+			if (apply) {
+				$('.box-apply').show();
+			}
+		});
+	</script>
 	<!-- END JS -->
 </body>
 </html>

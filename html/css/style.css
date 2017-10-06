@@ -736,6 +736,13 @@ dl.career .btn-apply {
 }
 .content-header-bg {
     position: relative;
+    text-align: center;
+}
+.content-header-bg.deep-green {
+    background-color: #5BA0B0;
+}
+.content-header-bg.black {
+    background-color: #000;
 }
 .content-header-bg + .content .main-content {
     padding-top: 2rem !important;
@@ -743,6 +750,7 @@ dl.career .btn-apply {
 .content-text-bg p {
     text-align: center;
     line-height: 1.7;
+    color: #FFF;
 }
 @media only screen and (min-width: 700px) {
     .content-text-bg {
@@ -752,7 +760,6 @@ dl.career .btn-apply {
         padding: 0 10rem;
     }
     .content-text-bg p {
-        color: #FFF;
         font-size: 1.2rem;
     }
 }
@@ -794,11 +801,13 @@ dl.career .btn-apply {
     font-size: 0;
     background: #000000;
     overflow: hidden;
+    opacity: 0;
 }
 .mo-gallery-item {
     padding: 10px;
     display: inline-block;
 }
+ .wow { visibility: hidden; }
 @media only screen and (min-width: 999px) {
     .mo-galleries .row2 .mo-gallery-item:first-child {
         width: 69%;
@@ -861,6 +870,21 @@ table#our-culture p {
 .mo-section .section-letter {
     position: absolute;
     z-index: 9;
+    width: 31.3125rem;
+    height: 31.25rem;
+}
+.mo-section .section-letter{
+    /*opacity: 0;*/
+    fill: none;
+    stroke: #0084c0;
+    stroke-width: 1px;
+}
+.section-letter.is-inview {
+    opacity: 1;
+    -webkit-animation: dash 3s linear forwards;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
 }
 .mo-section.right .section-image {
     text-align: right;
@@ -887,9 +911,11 @@ table#our-culture p {
     white-space: nowrap;
     padding: 18px 20px 20px;
     min-width: 200px;
+    z-index: 10;
 }
 .block-button a {
     color: #1e1e22;
+    display: block;
 }
 .section-block p {
     line-height: 2;
@@ -953,4 +979,43 @@ table#our-culture p {
 .mo-section:nth-of-type(4) .section-block {
     margin-left: 23%;
     margin-top: 10%;
+}
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.box-apply {
+    text-align: center;
+    margin: 0 0 2rem;
+    
+}
+#btn-apply {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 1rem 2rem 1.2rem;
+    color: #fff;
+    background-color: #000;
 }

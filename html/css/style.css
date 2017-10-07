@@ -865,13 +865,123 @@ table#our-culture p {
 .mo-parallax .mo-section {
     position: relative;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding-bottom: 4rem;
+}
+.mo-section .wrapper {
+    position: relative;
 }
 .mo-section .section-letter {
     position: absolute;
     z-index: 9;
-    width: 31.3125rem;
-    height: 31.25rem;
+    width: 150px;
+    height: auto;
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 1200px) {
+    .mo-section .section-letter {
+        width: 31.3125rem;
+        height: 31.25rem;
+    }
+    .mo-parallax .mo-section {
+        padding-bottom: 10rem;
+    }
+    .mo-section:first-child {
+        padding-top: 10rem;
+    }
+    .mo-section:first-child .section-block {
+        margin-left: 18%;
+    }
+    .mo-section:first-child .section-block p {
+        display: inline-block;
+        width: 80%;
+        margin-right: 4%;
+    }
+    .mo-parallax .mo-section.left {
+        padding-top: 20rem;
+    }
+    .mo-section.left .section-image {
+        margin-left: -11%;
+        margin-right: 11%;
+    }
+    .mo-section:nth-of-type(2) .section-block {
+        margin-left: -11%;
+        margin-right: 11%;
+        overflow: hidden;
+    }
+    .mo-section:nth-of-type(2) .section-block p{
+        width: 30%;
+        float: right;
+    }
+    .mo-section:nth-of-type(2) .block-button {
+        position: absolute;
+        right: -6%;
+        bottom: 8%;
+    }
+    .section-letter.right-top {
+        top: -32%;
+        right: 0;
+    }
+    .section-letter.left-top {
+        top: 0;
+        left: 0;
+    }
+    .section-letter.center-top {
+        top: 0;
+        left: 40%;
+    }
+    .mo-section:nth-of-type(3) .section-image {
+        padding-top: 15rem;
+    }
+    .mo-section:nth-of-type(3) .section-block p {
+        float: right;
+        width: 85%;
+    } 
+    .mo-section:nth-of-type(3) .section-block .block-button {
+        float: left;
+        width: 12%;
+        margin-top: 27px;
+    }
+    .mo-section:nth-of-type(4) .section-block {
+        margin-left: 23%;
+        padding-top: 5%;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 700px) {  
+    .mo-section .section-letter {
+        width: 25.0625rem;
+        height: 25rem;
+    }
+    .mo-parallax .mo-section {
+        padding: 4rem 0;
+    }
+    .mo-section .section-letter {
+        position: relative;
+        margin: 0 auto;
+    }
+    .mo-parallax .mo-section:first-child {
+        padding-top: 4rem;
+    }
+    .mo-section .wrapper {
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .mo-section .section-letter {
+        position: relative;
+        margin: 0 auto;
+    }
+    .block-button {
+        width: 100%;
+    }
+    .mo-section .section-block {
+        padding: 0 20px;
+    }
+    .mo-parallax .mo-section:first-child {
+        padding-top: 4rem;
+    }
+    .mo-section .wrapper {
+        padding: 0 20px;
+    }
 }
 .mo-section .section-letter{
     /*opacity: 0;*/
@@ -912,73 +1022,51 @@ table#our-culture p {
     padding: 18px 20px 20px;
     min-width: 200px;
     z-index: 10;
-}
-.block-button a {
     color: #1e1e22;
-    display: block;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
+}
+.block-button:hover {
+    transition-delay: 0s;
+}
+.block-button:hover::after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    transition-delay: 0s;
+}
+.block-button span {
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
+}
+.block-button:hover span {
+    color: #ffffff;
+}
+.block-button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1e1e22;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: center left;
+    -ms-transform-origin: center left;
+    transform-origin: center left;
+    transition: -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s, -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
 }
 .section-block p {
     line-height: 2;
-}
-.mo-section:first-child .section-block {
-    margin-left: 18%;
-}
-.mo-section:first-child .section-block p {
-    display: inline-block;
-    width: 80%;
-    margin-right: 4%;
-}
-.mo-section.left .section-image {
-    margin-left: -11%;
-    margin-right: 11%;
-}
-.section-letter.right-top {
-    top: 0;
-    right: 0;
-}
-.section-letter.left-top {
-    top: 0;
-    left: 0;
-}
-.section-letter.center-top {
-    top: 0;
-    left: 40%;
-}
-.mo-parallax .mo-section.left {
-    padding-top: 24rem;
-}
-.mo-section:nth-of-type(2) .section-block {
-    margin-left: -11%;
-    margin-right: 11%;
-    overflow: hidden;
-}
-.mo-section:nth-of-type(2) .section-block p{
-    width: 30%;
-    float: right;
-}
-.mo-section:nth-of-type(2) .block-button {
-    position: absolute;
-    right: -6%;
-    bottom: 8%;
 }
 .mo-section:nth-of-type(2) .section-image {
     position: relative;
 }
 .mo-section:nth-of-type(3) .section-block {
     overflow: hidden;
-}
-.mo-section:nth-of-type(3) .section-block p {
-    float: right;
-    width: 85%;
-} 
-.mo-section:nth-of-type(3) .section-block .block-button {
-    float: left;
-    width: 12%;
-    margin-top: 27px;
-}
-.mo-section:nth-of-type(4) .section-block {
-    margin-left: 23%;
-    margin-top: 10%;
 }
 @-webkit-keyframes dash {
     to {

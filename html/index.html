@@ -290,6 +290,7 @@
 	<script src="js/bannerscollection_zoominout.js" type="text/javascript"></script>
 	<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
 	<script src="js/wow.min.js" type="text/javascript"></script>
+	<script src="js/scrollspy.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script>
 		jQuery(function() {
@@ -314,7 +315,24 @@
 			
 		});
 
-		new WOW().init();
+		// Helper function for add element box list in WOW
+	  	WOW.prototype.addBox = function(element) {
+		    this.boxes.push(element);
+	  	};
+
+	  	// Init WOW.js and get instance
+	  	var wow = new WOW();
+	  	wow.init();
+
+	  	// Attach scrollSpy to .wow elements for detect view exit events,
+	  	// then reset elements and add again for animation
+	  	$('.wow').on('scrollSpy:exit', function() {
+		    $(this).css({
+	      		'visibility': 'hidden',
+	      		'animation-name': 'none'
+		    }).removeClass('animated');
+		    wow.addBox(this);
+	  	}).scrollSpy();
 	</script>
 	<!-- END JS -->
 </body>

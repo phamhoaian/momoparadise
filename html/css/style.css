@@ -883,10 +883,10 @@ table#our-culture p {
         height: 31.25rem;
     }
     .mo-parallax .mo-section {
-        padding-bottom: 10rem;
+        padding-bottom: 15rem;
     }
     .mo-section:first-child {
-        padding-top: 10rem;
+        padding-top: 15rem;
     }
     .mo-section:first-child .section-block {
         margin-left: 18%;

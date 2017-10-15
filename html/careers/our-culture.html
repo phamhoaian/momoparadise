@@ -27,10 +27,11 @@
 			</header>
 			<button class="mo-nav-button">
 				<div class="mo-nav-button-wrap">
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
+					<div class="mo-nav-button-icon">
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+					</div>
 				</div>
 			</button>
 			<nav class="mo-main-nav">
@@ -152,87 +153,70 @@
 					<p>
 						<strong>Our culture is based on a set of core values that are aligned with every decision we make:</strong>
 					</p>
-					<table id="our-culture">
-						<tbody>
-							<tr>
-								<td width="300px"></td>
-								<td>
-									<h3 >
-										<img src="/images/hospitality.png">
-									</h3>
-									<p>is how the delivery of a product that makes the other person feel. Hospitality makes an emotional impact on the receiver. It requires listening to our guests with every sense and response to them thoughtfully. A service without soul, no matter how elegant, is quickly forgotten by the guests. Hospitality that comes from soul and heart is the roots of our business.</p>
-									<br>
-									<br>
-								</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>
-									<h3>
-										<img src="/images/trust.png">
-									</h3>
-									<p>is a two-side equation. To cultivate trust, we encourage our team members to respect, listen deeply and practice true dialogue.</p>
-									<br>
-									<br>
-								</td>
-							</tr>
-							<tr>
-								<td align="right">
-									<h3>
-										<img src="/images/challenging-spirit.png">
-									</h3>
-								</td>
-								<td>
-									<p>Taking challenges means embracing changes.<br/>
-									Another reason of not taking challenge is afraid to make mistake. We want our members to make their own decisions whether the result is right or wrong. We believe if they don't make mistakes then that means they’re not gaining any experiences.
-									</p>
-									<br>
-									<br>
-								</td>
-							</tr>
-							<tr>
-								<td align="right">
-									<h3>
-										<img src="/images/opened-mind-creative.png">
-									</h3>
-								</td>
-								<td>
-									<p>We think of success as a journey rather than a destination. To venture in this journey, we need opened mind people whose mind-set assumes the best in other people. An opened mindset can lead to creative mindset by learning new things and quickly learn from a mistake.</p>
-									<br>
-									<br>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="box-apply" style="display: none">
-						<a href="javascript:void(0)" id="btn-apply">Open positions</a>
-					</div>
-					<dl class="career" style="display: none">
-						<dt>- Accountant</dt>
-						<dd style="display: none">
-							<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
-							<p>
-								<a class="btn-apply" href="">Apply</a>
+					<ul id="our-culture">
+						<li class="first">
+							<h3>
+								<img src="/images/hospitality.png">
+							</h3>
+							<p>is how the delivery of a product that makes the other person feel. Hospitality makes an emotional impact on the receiver. It requires listening to our guests with every sense and response to them thoughtfully. A service without soul, no matter how elegant, is quickly forgotten by the guests. Hospitality that comes from soul and heart is the roots of our business.</p>
+						</li>
+						<li class="second">
+							<h3>
+								<img src="/images/trust.png">
+							</h3>
+							<p>is a two-side equation. To cultivate trust, we encourage our team members to respect, listen deeply and practice true dialogue.</p>
+						</li>	
+						<li class="third">
+							<h3>
+								<img src="/images/challenging-spirit.png">
+							</h3>
+							<p>Taking challenges means embracing changes.<br/>
+							Another reason of not taking challenge is afraid to make mistake. We want our members to make their own decisions whether the result is right or wrong. We believe if they don't make mistakes then that means they’re not gaining any experiences.
 							</p>
-						</dd>
-						<dt>- Marketing Online</dt>
-						<dd style="display: none">
-							<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
-							<p class="text-center">
-								<a class="btn-apply" href="">Apply</a>
-							</p>
-						</dd>
-						<dt>- Designer</dt>
-						<dd style="display: none">
-							<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
-							<p class="text-center">
-								<a class="btn-apply" href="">Apply</a>
-							</p>
-						</dd>
-					</dl>
+						</li>
+						<li class="fourth">
+							<h3>
+								<img src="/images/opened-mind-creative.png">
+							</h3>
+							<p>We think of success as a journey rather than a destination. To venture in this journey, we need opened mind people whose mind-set assumes the best in other people. An opened mindset can lead to creative mindset by learning new things and quickly learn from a mistake.</p>
+						</li>		
+					</ul>
 				</div>
 			</section>
 			<!-- END MAIN CONTENT -->
+			<!-- POSITION -->
+			<section id="box-apply" style="display: none">
+				<div class="box-apply-wrapper">
+					<div class="box-apply-content">
+						<a href="javascript:void(0)" id="btn-apply">Open positions</a>
+						<dl class="career" style="display: none">
+							<h3>Open positions</h3>
+							<dt>Accountant</dt>
+							<dd style="display: none">
+								<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+							<dt>Marketing Online</dt>
+							<dd style="display: none">
+								<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+							<dt>Designer</dt>
+							<dd style="display: none">
+								<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+			<!-- END POSITION -->
 		</div>
 	</div>	
 	<!-- END WRAPPER -->
@@ -287,7 +271,8 @@
 		$(document).ready(function(){
 			var apply = getParameterByName('apply');
 			if (apply) {
-				$('.box-apply').show();
+				$('body').addClass('is-applied');
+				$('#box-apply').show();
 			}
 		});
 	</script>

@@ -1,4 +1,8 @@
 $(function(){
+	setTimeout(function() {
+        $('body').addClass('is-loaded')
+    }, 600);
+
 	$('button.mo-nav-button').click(function(){
 		if ($('body').hasClass('main-nav-open'))
 		{
@@ -39,8 +43,9 @@ $(function(){
 	});
 
 	$('#btn-apply').click(function(){
-		$(this).slideToggle();
+		$(this).hide();
 		$('dl.career').slideToggle();
+		$(this).parent().addClass('show-career');
 	});
 });
 

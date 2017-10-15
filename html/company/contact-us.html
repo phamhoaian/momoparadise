@@ -27,10 +27,11 @@
 			</header>
 			<button class="mo-nav-button">
 				<div class="mo-nav-button-wrap">
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
+					<div class="mo-nav-button-icon">
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+					</div>
 				</div>
 			</button>
 			<nav class="mo-main-nav">
@@ -152,18 +153,9 @@
 					<div class="contact">
 						<div class="container">
 							<div class="item">
-								<div class="contact-form">
-									<p>Contact us about anything related to our company or services.</p>
-									<p>We'll do our best to get back to you as soon as possible.</p>
-									<form action="/company/contact-us.html" method="post">
-										<input type="text" value="" name="name" placeholder="Name...">
-										<input type="text" value="" name="email" placeholder="Email...">
-										<input type="text" value="" name="phone" placeholder="Phone number...">
-										<textarea name="message" cols="30" rows="15" placeholder="Content..."></textarea>
-										<input type="submit" value="Send">
-									</form>
-								</div>
-								<div class="right">
+								<p>Contact us about anything related to our company or services.</p>
+								<p>We'll do our best to get back to you as soon as possible.</p>
+								<div class="left">
 									<div class="contact-info">
 										<h3>Ho Chi Minh City</h3>
 										<p>96 Nguyen Thi Minh Khai St., W.6, Dist.3</p>
@@ -171,6 +163,17 @@
 										<p>Fax: (028) 38 272 169</p>
 									</div>
 									<div id="map_hcm" class="map"></div>
+								</div>
+								<div class="right">
+									<div class="contact-form">
+										<form action="/company/contact-us.html" method="post">
+											<input type="text" value="" name="name" placeholder="Name...">
+											<input type="text" value="" name="email" placeholder="Email...">
+											<input type="text" value="" name="phone" placeholder="Phone number...">
+											<textarea name="message" cols="30" rows="15" placeholder="Content..."></textarea>
+											<input type="submit" value="Send">
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>

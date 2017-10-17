@@ -1002,6 +1002,21 @@ table#our-culture p {
     margin-right: 20px;
     margin-top: 20px;
 }
+@media only screen and (max-width: 1280px) {
+    .news .img {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .news .img {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .news .item {
+        padding: 15px 0;
+    }
+}
 .mo-parallax {
     position: relative;
 }
@@ -1016,8 +1031,8 @@ table#our-culture p {
 .mo-section .section-letter {
     position: absolute;
     z-index: 9;
-    width: 150px;
-    height: auto;
+    width: 15rem;
+    height: 15rem;
     padding-bottom: 10px;
 }
 @media only screen and (min-width: 1900px) {
@@ -1051,8 +1066,12 @@ table#our-culture p {
 }
 @media only screen and (min-width: 1200px) {
     .mo-section .section-letter {
-        width: 31.3125rem;
-        height: 31.25rem;
+        width: 21.3125rem;
+        height: 21.25rem;
+    }
+    .mo-parallax .mo-section:first-child .section-image-wrapper {
+        max-width: 75%;
+        margin-left: 25%;
     }
     .mo-parallax .mo-section {
         padding-bottom: 15rem;
@@ -1114,8 +1133,18 @@ table#our-culture p {
         margin-top: 27px;
     }
     .mo-section:nth-of-type(4) .section-block {
-        margin-left: 23%;
+        margin-left: 25%;
         padding-top: 5%;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    .mo-section .section-letter {
+        width: 31.3125rem;
+        height: 31.25rem;
+    }
+    .mo-parallax .mo-section:first-child .section-image-wrapper {
+        max-width: 100%;
+        margin-left: 0;
     }
 }
 @media only screen and (max-width: 1199px) and (min-width: 700px) {  
@@ -1135,6 +1164,7 @@ table#our-culture p {
     }
     .mo-section .wrapper {
         padding: 0 20px;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 699px) {
@@ -1144,6 +1174,7 @@ table#our-culture p {
     }
     .block-button {
         width: 100%;
+        margin-top: 15px;
     }
     .mo-section .section-block {
         padding: 0 20px;
@@ -1153,20 +1184,21 @@ table#our-culture p {
     }
     .mo-section .wrapper {
         padding: 0 20px;
+        text-align: center;
     }
 }
 .mo-section .section-letter{
     opacity: 0;
     fill: none;
-    stroke: #0084c0;
-    stroke-width: 1px;
+    /*stroke: #0084c0;
+    stroke-width: 1px;*/
 }
 .section-letter.is-inview {
     opacity: 1;
     -webkit-animation: dash 3s linear forwards;
     animation: dash 3s linear forwards;
-    stroke-dasharray: 3000;
-    stroke-dashoffset: 3000;
+    stroke-dasharray: 3500;
+    stroke-dashoffset: 3500;
 }
 .mo-section.right .section-image {
     text-align: right;
@@ -1271,13 +1303,14 @@ table#our-culture p {
     bottom: 0;
     left: 0;
     z-index: 899;
-    display: none;
     overflow: hidden;
     outline: 0;
     background: rgba(255,255,255, 0.5);
 }
 body.is-applied #box-apply {
     display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 #box-apply .box-apply-wrapper {
     background-color: #1390B3;
@@ -1291,6 +1324,7 @@ body.is-applied #box-apply {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 #box-apply .box-apply-content.show-career {
     display: block;
@@ -1302,6 +1336,44 @@ body.is-applied #box-apply {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3rem;
+}
+#btn-close {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    -webkit-transform: rotate(135deg); */
+    -ms-transform: rotate(135deg);
+     transform: rotate(135deg); 
+}
+#btn-close .btn-close-line {
+    margin-bottom: 0.5625rem;
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 30px;
+}
+#btn-close .btn-close-line:nth-child(1) {
+    -webkit-transform: translateY(0.625rem);
+    -ms-transform: translateY(0.625rem);
+    transform: translateY(0.625rem);
+}
+#btn-close .btn-close-line:nth-child(2) {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#btn-close .btn-close-line::after, #btn-close .btn-close-line::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 30px;
+    background-color: #ffffff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 @media only screen and (max-width: 800px) {
     #box-apply .box-apply-wrapper {
@@ -1329,6 +1401,9 @@ body.is-applied #box-apply {
         font-size: 1.5rem;
     }
     #box-apply .box-apply-content {
-        padding: 1rem 2rem;
+        padding: 0.5rem 1rem;
+    }
+    dl.career > dd {
+        padding: 1rem;
     }
 }

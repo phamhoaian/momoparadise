@@ -188,6 +188,10 @@
 			<section id="box-apply" style="display: none">
 				<div class="box-apply-wrapper">
 					<div class="box-apply-content">
+						<a href="javascript:void(0)" id="btn-close">
+							<span class="btn-close-line"></span>
+							<span class="btn-close-line"></span>
+						</a>
 						<a href="javascript:void(0)" id="btn-apply">Open positions</a>
 						<dl class="career" style="display: none">
 							<h3>Open positions</h3>
@@ -272,8 +276,13 @@
 			var apply = getParameterByName('apply');
 			if (apply) {
 				$('body').addClass('is-applied');
-				$('#box-apply').show();
+				$('#box-apply').slideToggle();
 			}
+
+			$('#btn-close').on('click', function(){
+				$('body').removeClass('is-applied');
+				$('#box-apply').slideToggle();
+			});
 		});
 	</script>
 	<!-- END JS -->

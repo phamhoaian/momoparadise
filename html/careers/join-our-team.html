@@ -4,6 +4,8 @@
 	<title>Join Our Team - Tam Thuc Investment</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -152,12 +154,106 @@
 				<div class="main-content">
 					<p>
 						<strong>It all begins with you</strong><br>
-						Our company’s most important asset is our people, who are our seeds to form our roots, which will decide how well our business can grow into. Please read more about our <a href="/careers/our-culture.html?apply=positions" style="color: red; text-decoration: underline;">core values</a> to see how it can impact your career at Tam Thuc.
+						Our company’s most important asset is our people, who are our seeds to form our roots, which will decide how well our business can grow into. Please read more about our <a href="javascript:void(0)" onclick="open_position()" style="color: red; text-decoration: underline;">core values</a> to see how it can impact your career at Tam Thuc.
 					</p>
 					<p>For anything further information regarding careers, please contact our HR Department: <a href="mailto:hr01@tamthuc.vn">hr01@tamthuc.vn</a></p>
 				</div>
 			</section>
 			<!-- END MAIN CONTENT -->
+			<!-- POSITION -->
+			<section id="modal-position" class="modal" style="display: none">
+				<div class="modal-wrapper">
+					<div class="modal-content">
+						<a href="javascript:void(0)" id="btn-position-close" class="btn-close">
+							<span class="btn-close-line"></span>
+							<span class="btn-close-line"></span>
+						</a>
+						<p>
+							<strong>Our culture is based on a set of core values that are aligned with every decision we make:</strong>
+						</p>
+						<ul id="our-culture">
+							<li class="first">
+								<h3>
+									<img src="/images/hospitality.png">
+								</h3>
+								<p>is how the delivery of a product that makes the other person feel. Hospitality makes an emotional impact on the receiver. It requires listening to our guests with every sense and response to them thoughtfully. A service without soul, no matter how elegant, is quickly forgotten by the guests. Hospitality that comes from soul and heart is the roots of our business.</p>
+							</li>
+							<li class="second">
+								<h3>
+									<img src="/images/trust.png">
+								</h3>
+								<p>is a two-side equation. To cultivate trust, we encourage our team members to respect, listen deeply and practice true dialogue.</p>
+							</li>	
+							<li class="third">
+								<h3>
+									<img src="/images/challenging-spirit.png">
+								</h3>
+								<p>Taking challenges means embracing changes.<br/>
+								Another reason of not taking challenge is afraid to make mistake. We want our members to make their own decisions whether the result is right or wrong. We believe if they don't make mistakes then that means they’re not gaining any experiences.
+								</p>
+							</li>
+							<li class="fourth">
+								<h3>
+									<img src="/images/opened-mind-creative.png">
+								</h3>
+								<p>We think of success as a journey rather than a destination. To venture in this journey, we need opened mind people whose mind-set assumes the best in other people. An opened mindset can lead to creative mindset by learning new things and quickly learn from a mistake.</p>
+							</li>		
+						</ul>
+						<div class="text-center">
+							<a href="javascript:void(0)" id="btn-open-position">Open positions</a>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<!-- END POSITION -->
+			<!-- APPLY -->
+			<section id="modal-apply" class="modal" style="display: none">
+				<div class="modal-wrapper">
+					<div class="modal-content">
+						<a href="javascript:void(0)" id="btn-apply-close" class="btn-close">
+							<span class="btn-close-line"></span>
+							<span class="btn-close-line"></span>
+						</a>
+						<dl class="career">
+							<h3>Open positions</h3>
+							<dt>Accountant</dt>
+							<dd style="display: none">
+								<div class="detail">
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								</div>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+							<dt>Marketing Online</dt>
+							<dd style="display: none">
+								<div class="detail">
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								</div>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+							<dt>Designer</dt>
+							<dd style="display: none">
+								<div class="detail">
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+									<p>Prepares asset, liability, and capital account entries by compiling and analyzing account information. Documents financial trans-actions be entering account information. Recommends financial actions by analyzing accounting options.</p>
+								</div>
+								<div class="text-right">
+									<a class="btn-apply" href="">Apply</a>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+			<!-- END APPLY -->
 		</div>
 	</div>	
 	<!-- END WRAPPER -->
@@ -208,6 +304,31 @@
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#btn-position-close').on('click', function(){
+				$('body').removeClass('is-applied');
+				$('#modal-position').slideToggle();
+			});
+
+			$('#btn-apply-close').on('click', function(){
+				$('body').removeClass('is-applied');
+				$('#modal-apply').slideToggle();
+			});
+
+			$('#btn-open-position').on('click', function(){
+				$('body').addClass('is-applied');
+				$('#modal-position').hide();
+				$('#modal-apply').slideToggle();
+			});
+		});
+
+		function open_position() {
+			$('body').addClass('is-applied');
+			$('#modal-position').slideToggle();
+		}
+	</script>
 	<!-- END JS -->
 </body>
 </html>

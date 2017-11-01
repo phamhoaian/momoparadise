@@ -5,7 +5,7 @@
 }
 body {
 	font-family: UTM Avo;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 button {
     border: none;
@@ -794,7 +794,6 @@ body.main-nav-open {
 }
 dl.career h3 {
     text-transform: uppercase;
-    color: #fff;
     font-size: 3rem;
     margin: 0 0 2rem;
 }
@@ -803,12 +802,16 @@ dl.career > dt {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    color: #FFF;
 }
 dl.career > dd {
     margin: 0 0 2rem;
     background: #fff;
     padding: 2rem;
+}
+dl.career > dd .detail {
+    height: 150px;
+    overflow-x: auto;
+    margin-bottom: 15px;
 }
 dl.career > dd p {
     margin: 0 0 15px;
@@ -937,6 +940,9 @@ dl.career .btn-apply {
     right: 5%;
     bottom: 5%;
     z-index: 10;
+}
+.mo-slide-logo img {
+    max-width: 100% !important;
 }
 .map {
     height: 400px;
@@ -1296,7 +1302,7 @@ table#our-culture p {
     }
 }
 
-#box-apply {
+.modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -1307,26 +1313,30 @@ table#our-culture p {
     outline: 0;
     background: rgba(255,255,255, 0.5);
 }
-body.is-applied #box-apply {
+body.is-applied .modal-content {
     display: block;
     overflow-x: hidden;
     overflow-y: auto;
 }
-#box-apply .box-apply-wrapper {
-    background-color: #1390B3;
+.modal .modal-wrapper {
+    background-color: #BCBEC0;
     padding: 20px;
     margin: 10rem 7.5rem;
 }
-#box-apply .box-apply-content {
+.modal .modal-content {
     border: 1px solid #fff;
     min-height: 600px;
+    height: 600px;
     padding: 4rem 6rem;
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     position: relative;
 }
-#box-apply .box-apply-content.show-career {
+.modal .modal-content p {
+    line-height: 1.5;
+}
+.modal .modal-content.show-career {
     display: block;
     align-items: left;
     justify-content: left;
@@ -1337,7 +1347,17 @@ body.is-applied #box-apply {
     font-weight: bold;
     font-size: 3rem;
 }
-#btn-close {
+#btn-open-position {
+    background-color: #1390B3;
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 50px 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-close {
     position: absolute;
     right: 15px;
     top: 18px;
@@ -1345,24 +1365,24 @@ body.is-applied #box-apply {
     -ms-transform: rotate(135deg);
      transform: rotate(135deg); 
 }
-#btn-close .btn-close-line {
+.btn-close .btn-close-line {
     margin-bottom: 0.5625rem;
     position: relative;
     display: block;
     height: 1px;
     width: 30px;
 }
-#btn-close .btn-close-line:nth-child(1) {
+.btn-close .btn-close-line:nth-child(1) {
     -webkit-transform: translateY(0.625rem);
     -ms-transform: translateY(0.625rem);
     transform: translateY(0.625rem);
 }
-#btn-close .btn-close-line:nth-child(2) {
+.btn-close .btn-close-line:nth-child(2) {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-#btn-close .btn-close-line::after, #btn-close .btn-close-line::before {
+.btn-close .btn-close-line::after, .btn-close .btn-close-line::before {
     display: block;
     content: "";
     position: absolute;
@@ -1375,11 +1395,14 @@ body.is-applied #box-apply {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
+.text-center {
+    text-align: center;
+}
 @media only screen and (max-width: 800px) {
-    #box-apply .box-apply-wrapper {
+    .modal .modal-wrapper {
         margin: 10rem 2.5rem;
     }
-    #box-apply .box-apply-content {
+    .modal .modal-content {
         padding: 2rem 4rem;
         min-height: 300px;
     }
@@ -1391,7 +1414,7 @@ body.is-applied #box-apply {
     }
 }
 @media only screen and (max-width: 599px) {
-    #box-apply .box-apply-wrapper {
+    .modal .modal-wrapper {
         margin: 100px 10px 20px;
     }
     #btn-apply {
@@ -1400,7 +1423,7 @@ body.is-applied #box-apply {
     dl.career h3 {
         font-size: 1.5rem;
     }
-    #box-apply .box-apply-content {
+    .modal .modal-content {
         padding: 0.5rem 1rem;
     }
     dl.career > dd {

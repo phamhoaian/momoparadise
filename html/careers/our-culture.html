@@ -4,6 +4,8 @@
 	<title>Our Culture - Tam Thuc Investment</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -185,9 +187,9 @@
 			</section>
 			<!-- END MAIN CONTENT -->
 			<!-- POSITION -->
-			<section id="box-apply" style="display: none">
-				<div class="box-apply-wrapper">
-					<div class="box-apply-content">
+			<section id="modal-apply" class="modal" style="display: none">
+				<div class="modal-wrapper">
+					<div class="modal-content">
 						<a href="javascript:void(0)" id="btn-close">
 							<span class="btn-close-line"></span>
 							<span class="btn-close-line"></span>
@@ -271,20 +273,6 @@
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/common.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var apply = getParameterByName('apply');
-			if (apply) {
-				$('body').addClass('is-applied');
-				$('#box-apply').slideToggle();
-			}
-
-			$('#btn-close').on('click', function(){
-				$('body').removeClass('is-applied');
-				$('#box-apply').slideToggle();
-			});
-		});
-	</script>
 	<!-- END JS -->
 </body>
 </html>

@@ -4,6 +4,8 @@
 	<title>Contact Us - Tam Thuc Investment</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -27,10 +29,11 @@
 			</header>
 			<button class="mo-nav-button">
 				<div class="mo-nav-button-wrap">
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
+					<div class="mo-nav-button-icon">
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+					</div>
 				</div>
 			</button>
 			<nav class="mo-main-nav">
@@ -38,7 +41,7 @@
 				<div class="mo-main-nav-list">
 					<ul class="mo-nav-parent">
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Company</span>
+							<a href="/company/our-roots.html" class="mo-nav-txt">Company</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/company/our-roots.html">Our Roots</a>
@@ -52,7 +55,7 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Careers</span>
+							<a href="/careers/why-work-with-us.html" class="mo-nav-txt">Careers</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/careers/why-work-with-us.html">Why Work With Us</a>
@@ -66,7 +69,7 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Businesses</span>
+							<a href="/businesses/our-approach.html" class="mo-nav-txt">Businesses</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/businesses/our-approach.html">Our Approach</a>
@@ -80,13 +83,13 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">News</span>
+							<a href="/news/engagement.html" class="mo-nav-txt">News</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/news/engagement.html">Engagement</a>
 								</li>
 								<li class="mo-nav-sub-item">
-									<a class="mo-nav-link" href="/news/pr">PR</a>
+									<a class="mo-nav-link" href="/news/pr.html">PR</a>
 								</li>
 							</ul>
 						</li>
@@ -149,44 +152,31 @@
 			<!-- MAIN CONTENT -->
 			<section class="content">
 				<div class="main-content">
-					<p>For obtain more information on about our company, you may contact one of our offices and our devoted personnel will quickly put you in contact with the person who can best satisfy your needs.</p>
-				</div>
-				<div class="contact">
-					<div class="container">
-						<div class="item">
-							<div class="top">
-								<h3>Ho Chi Minh City</h3>
-								<p>96 Nguyen Thi Minh Khai St., W.6, Dist.3</p>
-								<p>Phone: (028) 38 272 909</p>
-								<p>Fax: (028) 38 272 169</p>
-							</div>
-							<div id="map_hcm" class="map"></div>
-							<div class="contact-form">
-								<form action="/company/contact-us.html" method="post">
-									<input type="text" value="" name="name" placeholder="Name...">
-									<input type="text" value="" name="email" placeholder="Email...">
-									<input type="text" value="" name="phone" placeholder="Phone number...">
-									<textarea name="message" cols="30" rows="10" placeholder="Content..."></textarea>
-									<input type="submit" value="Send">
-								</form>
-							</div>
-						</div>
-						<div class="item">
-							<div class="top">
-								<h3>Ha Noi City</h3>
-								<p>96 Nguyen Thi Minh Khai St., W.6, Dist.3</p>
-								<p>Phone: (028) 38 272 909</p>
-								<p>Fax: (028) 38 272 169</p>
-							</div>
-							<div id="map_hn" class="map"></div>
-							<div class="contact-form">
-								<form action="/company/contact-us.html" method="post">
-									<input type="text" value="" name="name" placeholder="Name...">
-									<input type="text" value="" name="email" placeholder="Email...">
-									<input type="text" value="" name="phone" placeholder="Phone number...">
-									<textarea name="message" cols="30" rows="10" placeholder="Content..."></textarea>
-									<input type="submit" value="Send">
-								</form>
+					<div class="contact">
+						<div class="container">
+							<div class="item">
+								<p>Contact us about anything related to our company or services.</p>
+								<p>We'll do our best to get back to you as soon as possible.</p>
+								<div class="left">
+									<div class="contact-info">
+										<h3>Ho Chi Minh City</h3>
+										<p>96 Nguyen Thi Minh Khai St., W.6, Dist.3</p>
+										<p>Phone: (028) 38 272 909</p>
+										<p>Fax: (028) 38 272 169</p>
+									</div>
+									<div id="map_hcm" class="map"></div>
+								</div>
+								<div class="right">
+									<div class="contact-form">
+										<form action="/company/contact-us.html" method="post">
+											<input type="text" value="" name="name" placeholder="Name...">
+											<input type="text" value="" name="email" placeholder="Email...">
+											<input type="text" value="" name="phone" placeholder="Phone number...">
+											<textarea name="message" cols="30" rows="15" placeholder="Content..."></textarea>
+											<input type="submit" value="Send">
+										</form>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -203,16 +193,16 @@
 			<nav class="mo-nav-footer">
 				<ul>
 					<li>
-						<a href="/">Company</a>
+						<a href="/company/our-roots.html">Company</a>
 					</li>
 					<li>
-						<a href="/">Careers</a>
+						<a href="/careers/why-work-with-us.html">Careers</a>
 					</li>
 					<li>
-						<a href="/">Businesses</a>
+						<a href="/businesses/our-approach.html">Businesses</a>
 					</li>
 					<li>
-						<a href="/">News</a>
+						<a href="/news/engagement.html">News</a>
 					</li>
 				</ul>
 			</nav>

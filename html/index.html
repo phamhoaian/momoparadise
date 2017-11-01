@@ -4,8 +4,11 @@
 	<title>Tam Thuc Investment</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bannerscollection_zoominout.css" >
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style type="text/css">
 		body {
@@ -37,10 +40,11 @@
 			</header>
 			<button class="mo-nav-button">
 				<div class="mo-nav-button-wrap">
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
-					<span class="mo-nav-button-line"></span>
+					<div class="mo-nav-button-icon">
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+						<span class="mo-nav-button-line"></span>
+					</div>
 				</div>
 			</button>
 			<nav class="mo-main-nav">
@@ -48,7 +52,7 @@
 				<div class="mo-main-nav-list">
 					<ul class="mo-nav-parent">
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Company</span>
+							<a href="/company/our-roots.html" class="mo-nav-txt">Company</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/company/our-roots.html">Our Roots</a>
@@ -62,7 +66,7 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Careers</span>
+							<a href="/careers/why-work-with-us.html" class="mo-nav-txt">Careers</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/careers/why-work-with-us.html">Why Work With Us</a>
@@ -76,7 +80,7 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">Businesses</span>
+							<a href="/businesses/our-approach.html" class="mo-nav-txt">Businesses</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/businesses/our-approach.html">Our Approach</a>
@@ -90,13 +94,13 @@
 							</ul>
 						</li>
 						<li class="mo-nav-item">
-							<span class="mo-nav-txt">News</span>
+							<a href="/news/engagement.html" class="mo-nav-txt">News</a>
 							<ul class="mo-nav-sub">
 								<li class="mo-nav-sub-item">
 									<a class="mo-nav-link" href="/news/engagement.html">Engagement</a>
 								</li>
 								<li class="mo-nav-sub-item">
-									<a class="mo-nav-link" href="/news/pr">PR</a>
+									<a class="mo-nav-link" href="/news/pr.html">PR</a>
 								</li>
 							</ul>
 						</li>
@@ -136,29 +140,159 @@
 			<!-- END HEADER -->
 
 			<!-- SLIDE -->
-			<div id="bannerscollection_zoominout_majestic">
+			<section id="bannerscollection_zoominout_majestic">
 				<div class="myloader"></div>
 			    <ul class="bannerscollection_zoominout_list">
-			   		<li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText1" data-horizontalPosition="center" data-verticalPosition="center"><img src="images/slide/slide-1.jpg" alt="" width="2500" height="1570" /></li>
-			        <li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText2" data-horizontalPosition="right" data-verticalPosition="center"><img src="images/slide/slide-2.jpg" alt="" width="2500" height="1570" /></li>
 			        <li data-initialZoom="0.78" data-finalZoom="1" data-text-id="#bannerscollection_zoominout_photoText3"><img src="images/slide/slide-3.jpg" alt="" width="2500" height="1570" /></li>
+			        <li data-initialZoom="1" data-finalZoom="0.78" data-text-id="#bannerscollection_zoominout_photoText2" data-horizontalPosition="right" data-verticalPosition="center"><img src="images/slide/slide-2.jpg" alt="" width="2500" height="1570" /></li>
 			      </li>
-			    </ul>       
-			</div>
+			    </ul>  
+			    <div class="mo-slide-logo">
+					<img src="images/logo-momoparadise-slide.png" alt="Mo-Mo-Paradise Việt Nam">
+				</div>     
+			</section>
 			<!-- END SLIDE -->
 
-			<div class="mo-slide-logo">
-				<img src="images/logo-momoparadise-slide.png" alt="Mo-Mo-Paradise Việt Nam">
-			</div>
+			<section class="mo-parallax">
+				<div class="mo-section right">
+					<div class="wrapper">
+						<svg data-speed="1" role="img" class="section-letter left-top js-parallax">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/letter-company.svg#letter"></use>
+						</svg>
+						<div class="section-image wow fadeInRight">
+							<div class="section-image-wrapper">
+								<div class="section-image-bg">
+									<img src="images/out-roots.jpg" style="width: 1150px;height: auto;">
+								</div>
+							</div>
+						</div>
+						<div class="section-block wow fadeInUp">
+							<p>We are a team of young entrepreneurs who are passionate not only about food, but also about how to delivering happiness to everyone including our team members and our guests.</p>
+							<a class="block-button" href="company/our-roots.html">
+								<span class="button-label">More...</span>
+							</a>
+						</div>
+						</div>
+				</div>
+				<div class="mo-section left">
+					<div class="wrapper">
+						<svg data-speed="1" role="img" class="section-letter right-top js-parallax">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/letter-career.svg#letter"></use>
+						</svg>
+						<div class="section-image  wow fadeInLeft">
+							<div class="section-image-wrapper">
+								<div class="section-image-bg">
+									<img src="images/why-work-with-us.jpg">
+								</div>
+							</div>
+							<a class="block-button" href="careers/why-work-with-us.html">
+								<span class="button-label">More...</span>
+							</a>
+						</div>
+						<div class="section-block  wow fadeInUp">
+							<p>At Tam Thuc, we never consider our team members as employees. We don't think they work "for" us. On the other hand, we are working hard to build our culture so that they'd feel they are working "with" us.</p>
+						</div>
+					</div>
+				</div>
+				<div class="mo-section">
+					<div class="wrapper">
+						<svg data-speed="1" role="img" class="section-letter center-top js-parallax">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/letter-business.svg#letter"></use>
+						</svg>
+						<div class="section-image">
+							<div class="section-image-wrapper">
+								<div class="section-image-bg">
+									<img src="images/our-approach.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="section-block wow fadeInUp">
+							<p>
+								Everyone knows this simple concept:<br/>
+								"To stand out in a market, you need to differentiate."<br/>
+								We would add: To differentiate, you need to have strong roots. Otherwise, it is not sustainable by competing in a "Red Ocean" by cutting down prices... Our strong roots are Authenticity and Hospotality
+							</p>
+							<a class="block-button" href="businesses/our-approach.html">
+								<span class="button-label">More...</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="mo-section right">
+					<div class="wrapper">
+						<svg data-speed="1" role="img" class="section-letter left-top js-parallax">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/letter-news.svg#letter"></use>
+						</svg>
+						<div class="section-block wow fadeInRight">
+							<p>Tam Thuc commits to take part of its revenues to do charity works whenever it has a chance to. And we encourage both our team members and our guests to join us.</p>
+								<a class="block-button" href="news/engagement.html">
+									<span class="button-label">More...</span>
+								</a>
+						</div>
+						<div class="section-image wow fadeInUp">
+							<div class="section-image-wrapper">
+								<div class="section-image-bg">
+									<img src="images/vet-seo-cuoc-doi.jpg" style="width: 1150px;height: auto;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>	
 	<!-- END WRAPPER -->
+
+	<!-- FOOTER -->
+	<footer class="mo-footer">
+		<div class="mo-footer-container">
+			<nav class="mo-nav-footer">
+				<ul>
+					<li>
+						<a href="/company/our-roots.html">Company</a>
+					</li>
+					<li>
+						<a href="/careers/why-work-with-us.html">Careers</a>
+					</li>
+					<li>
+						<a href="/businesses/our-approach.html">Businesses</a>
+					</li>
+					<li>
+						<a href="/news/engagement.html">News</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mo-social-footer">
+				<ul>
+					<li>
+						<a href="http://facebook.com">
+							<img src="/images/icon-fb-black.png">
+						</a>
+					</li>
+					<li>
+						<a href="http://instagram.com">
+							<img src="/images/icon-instagram-black.png">
+						</a>
+						
+					</li>
+					<li>
+						<a href="/">
+							<img src="/images/icon-global-black.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
 
 	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 	<script src="js/bannerscollection_zoominout.js" type="text/javascript"></script>
 	<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+	<script src="js/wow.min.js" type="text/javascript"></script>
+	<script src="js/scrollspy.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script>
 		jQuery(function() {
@@ -168,8 +302,9 @@
 				width: 1920,
 				height: 1200,
 				width100Proc:true,
-				height100Proc:true,
+				// height100Proc:true,
 				fadeSlides:true,
+				enableTouchScreen:false,
 				showNavArrows:true,
 				showCircleTimer: false,
 				autoHideNavArrows: false,
@@ -181,6 +316,33 @@
 			});		
 			
 		});
+
+		// Helper function for add element box list in WOW
+	  	WOW.prototype.addBox = function(element) {
+		    this.boxes.push(element);
+	  	};
+
+	  	// Init WOW.js and get instance
+	  	var wow = new WOW();
+	  	wow.init();
+
+	  	// Attach scrollSpy to .wow elements for detect view exit events,
+	  	// then reset elements and add again for animation
+	  	$('.wow').on('scrollSpy:exit', function() {
+		    $(this).css({
+	      		'visibility': 'hidden',
+	      		'animation-name': 'none'
+		    });
+		    wow.addBox(this);
+	  	}).scrollSpy();
+
+	  	$('.section-letter').on('scrollSpy:enter', function() {
+			this.classList.add('is-inview');
+		}).scrollSpy();
+
+		$('.section-letter').on('scrollSpy:exit', function() {
+			this.classList.remove('is-inview');
+		}).scrollSpy();
 	</script>
 	<!-- END JS -->
 </body>

@@ -1,4 +1,8 @@
 $(function(){
+	setTimeout(function() {
+        $('body').addClass('is-loaded')
+    }, 600);
+
 	$('button.mo-nav-button').click(function(){
 		if ($('body').hasClass('main-nav-open'))
 		{
@@ -26,7 +30,31 @@ $(function(){
 	$('.career > dt').click(function(){
 		allPanels.slideUp();
 
-	    $(this).next().slideDown();
-	    return false;
+		if ( ! $(this).hasClass('active'))
+		{
+			$('.career > dt').removeClass('active');
+			$(this).addClass('active');
+			$(this).next().slideDown();
+		}
+		else
+		{
+			$(this).removeClass('active');
+		}
+	});
+
+	$('#btn-apply').click(function(){
+		$(this).hide();
+		$('dl.career').slideToggle();
+		$(this).parent().addClass('show-career');
 	});
 });
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
